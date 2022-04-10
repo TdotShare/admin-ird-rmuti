@@ -13,7 +13,7 @@ const Footer: NextPage = () => {
                                 <aside className="footer__widget">
                                     <div className="footer__info">
                                         <div className="footer__logo">
-                                            <img src="/template/images/common/Logo-white.png" alt="image" />
+                                            <img src="/irdmain_and_logo-02.png" alt="image" />
                                         </div>
                                         <div className="footer__social__link">
                                             <ul>
@@ -99,7 +99,7 @@ const Footer: NextPage = () => {
                             <div className="col-md-12">
                                 <div className="footer__copyright">
                                     <h2>
-                                        Copyright <a href="index.html">สถาบันวิจัยและพัฒนา มทร.อีสาน</a> All Rights Reserved
+                                        Copyright <a href="https://ird.rmuti.ac.th/">สถาบันวิจัยและพัฒนา มทร.อีสาน</a> All Rights Reserved
                                         
                                     </h2>
                                 </div>

@@ -1,6 +1,7 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { workType } from '../data/work'
 import styles from '../styles/Home.module.css'
 import Atmosphere from './src/components/atmosphere'
 import Breadcrumb from './src/components/breadcrumb'
@@ -9,17 +10,34 @@ import Header from './src/components/header'
 import Ourwork from './src/components/ourwork'
 import Team from './src/components/team'
 
-const Home: NextPage = () => {
+const Home: NextPage<workType> = (props) => {
   return (
     <>
       <Header />
       <Breadcrumb />
-      <Ourwork />
+      <Ourwork workdata={props} />
       <Team />
       <Atmosphere />
       <Footer />
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+
+  return {
+    props: {
+      data: [
+        { "id": 1, "title": "แผนกงานบริหารงานทั่วไป", "detail" : "งานสารบรรณระดับหน่วยงาน , งานรายงานประจำปี , งานบุคลากร , ..."  },
+        { "id": 2, "title": "งานกองทุนสนับสนุนการวิจัย", "detail" : "งานเบิกจ่ายกองทุน , งานสรุปบัญชีกองทุน , ..."  },
+        { "id": 3, "title": "งานแผนและงบประมาณ", "detail" : "งานแผนยุทธศาสตร์ , งานแผนกลยุทธ์ , งานประชุม , งานการเงิน , ..."  },
+        { "id": 4, "title": "งานพัสดุและครุภัณฑ์", "detail" : "งานจัดซื้อ / จัดจ้าง , งานครุภัณฑ์ , งานพัสดุ , ..."  },
+        { "id": 5, "title": "งานโสตและสารสนเทศ", "detail" : "งาน IT Support , งานประชาสัมพันธ์ , งานโสตทัศนูปกรณ์ , ..."  },
+        { "id": 6, "title": "งานวารสารวิชาการ", "detail" : "งานวารสาร มทร.อีสาน , Research and publication clinic , ..."  },
+        { "id": 7, "title": "ศูนย์เครื่องมือวิจัย มทร.อีสาน", "detail" : "งานเอกสาร-จัดทำข้อมูล , งานฝึกอบรมการใช้เครื่องมือ , งานทดสอบตัวอย่าง"  },
+      ]
+    }
+  }
 }
 
 export default Home
