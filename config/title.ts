@@ -1,5 +1,5 @@
 export const titleConfig  =  {
-    NameWeb : `บริหารงานทั่วไป - สถาบันวิจัยและพัฒนา`,
+    NameWeb : `บริหารงานทั่วไป - สวพ. มทร.อีสาน`,
     NameFull : `บริหารงานทั่วไป`,
     OrganizationName : `สวพ.`,
     RmutiName : `มทร.อีสาน`,
