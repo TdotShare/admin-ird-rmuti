@@ -7,10 +7,9 @@ const SEO: NextPage = () => {
         <>
             <Head>
                 <title>{titleConfig.NameWeb}</title>
-                <meta name="description" content="MISIRD RMUTI" />
+                <meta name="description" content={`${titleConfig.NameWeb}`} />
                 <link rel="icon" href="./irdrmuti.gif" />
                 <link rel="apple-touch-icon" href="./irdrmuti.gif" />
-
 
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
