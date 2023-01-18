@@ -1,6 +1,7 @@
 import axios from 'axios'
 import type { GetStaticProps, NextPage } from 'next'
-import React from 'react'
+import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react'
 //import Head from 'next/head'
 //import Image from 'next/image'
 import { workType } from '../data/work'
@@ -14,13 +15,22 @@ import Team from './src/components/team'
 
 const Home: NextPage<workType> = (props) => {
 
+  const router = useRouter();
+  const { lang } = router.query
+
+
+  useEffect(() => {
+    if(!lang)return
+    console.log(lang)
+  }, [router.query]);
+
 
   return (
     <>
-      <Header />
-      <Breadcrumb />
-      <Ourwork workdata={props} />
-      <Team />
+      <Header lang={lang ? lang.toString() : "th" } />
+      <Breadcrumb lang={lang ? lang.toString() : "th" } />
+      <Ourwork lang={lang ? lang.toString() : "th" } workdata={props} />
+      <Team lang={lang ? lang.toString() : "th" } />
       <Atmosphere />
       <Footer />
     </>
