@@ -4,13 +4,18 @@ import { langDisplay } from '../../../../config/lang';
 
 
 type AppProps = {
-    lang : string
+    lang: string
 };
 
 const Header: NextPage<AppProps> = ({ lang = "th" }) => {
 
-    if(!["th" , "en"].includes(lang)){
+    if (!["th", "en"].includes(lang)) {
         lang = "th"
+    }
+
+    const changeLang = () => {
+        let path_lang = `http://${window.location.host}?lang=${lang === `th` ? `en` : `th`}`
+        window.location.href = path_lang
     }
 
     return (
@@ -43,6 +48,9 @@ const Header: NextPage<AppProps> = ({ lang = "th" }) => {
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="https://ird.rmuti.ac.th/main/archives/2039">{langDisplay[lang].menu_main_contact}</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" onClick={() => changeLang()} >{langDisplay[lang].menu_main_change_lang} ({lang === "th" ? "en" : "th"})</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -85,6 +93,9 @@ const Header: NextPage<AppProps> = ({ lang = "th" }) => {
                                             </li>
                                             <li className="nav-item">
                                                 <a className="nav-link" href="https://ird.rmuti.ac.th/main/archives/2039">{langDisplay[lang].menu_main_contact}</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" onClick={() => changeLang()} >{langDisplay[lang].menu_main_change_lang} ({lang === "th" ? "en" : "th"})</a>
                                             </li>
                                         </ul>
                                     </nav>

@@ -32,7 +32,7 @@ const Home: NextPage<workType> = (props) => {
       <Ourwork lang={lang ? lang.toString() : "th" } workdata={props} />
       <Team lang={lang ? lang.toString() : "th" } />
       <Atmosphere lang={lang ? lang.toString() : "th" } />
-      <Footer />
+      <Footer lang={lang ? lang.toString() : "th" } />
     </>
   )
 }
