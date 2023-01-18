@@ -15,6 +15,9 @@ interface IObjectKeys {
         personnel_our_people : string
         personnel_department_personnel : string
         personnel_list : string
+        picture_our_department : string
+        picture_of : string
+
 
     };
   }
@@ -35,7 +38,9 @@ export const langDisplay : IObjectKeys  = {
         ourwork_list : "มีดังนี้",
         personnel_our_people : "บุคลากรของเรา",
         personnel_department_personnel : "บุคลากรของฝ่าย",
-        personnel_list : "มีดังนี้"
+        personnel_list : "มีดังนี้",
+        picture_our_department : "รูปภาพฝ่ายของเรา",
+        picture_of : "รูปภาพฝ่ายของ"
     } ,
     "en" : {
         menu_main_home : "MainPage IRD" ,
@@ -52,7 +57,9 @@ export const langDisplay : IObjectKeys  = {
         ourwork_list : "are as follows",
         personnel_our_people : "Our People",
         personnel_department_personnel : "Department Personnel",
-        personnel_list : "are as follows"
+        personnel_list : "are as follows",
+        picture_our_department : "Picture Our Department",
+        picture_of : "picture of",
      } , 
     
 }

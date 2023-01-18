@@ -31,7 +31,7 @@ const Home: NextPage<workType> = (props) => {
       <Breadcrumb lang={lang ? lang.toString() : "th" } />
       <Ourwork lang={lang ? lang.toString() : "th" } workdata={props} />
       <Team lang={lang ? lang.toString() : "th" } />
-      <Atmosphere />
+      <Atmosphere lang={lang ? lang.toString() : "th" } />
       <Footer />
     </>
   )
