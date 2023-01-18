@@ -14,7 +14,7 @@ const Header: NextPage<AppProps> = ({ lang = "th" }) => {
     }
 
     const changeLang = () => {
-        let path_lang = `http://${window.location.host}?lang=${lang === `th` ? `en` : `th`}`
+        let path_lang = `https://${window.location.host}/main/?lang=${lang === 'th' ? 'en' : 'th'}`
         window.location.href = path_lang
     }
 
