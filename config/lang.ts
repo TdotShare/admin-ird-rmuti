@@ -39,7 +39,7 @@ export const langDisplay : IObjectKeys  = {
         ourwork_structure : "โครงสร้างการบริหารงาน",
         ourwork_myjob : "งานของเรา",
         ourwork_department_work : "งานของฝ่าย",
-        ourwork_list : "มีดังนี้ ",
+        ourwork_list : "มีดังนี้",
         personnel_our_people : "บุคลากรของเรา",
         personnel_department_personnel : "บุคลากรของฝ่าย",
         personnel_list : "มีดังนี้",
