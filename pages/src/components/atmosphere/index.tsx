@@ -12,6 +12,10 @@ const Atmosphere : NextPage <AppProps> = ({ lang = "th" }) => {
     if (!["th", "en"].includes(lang)) {
         lang = "th"
     }
+    
+    if (!["th", "en"].includes(lang)) {
+        lang = "th"
+    }
 
     return (
         <section className="whats-included">
