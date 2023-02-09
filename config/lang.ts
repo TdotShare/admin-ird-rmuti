@@ -31,6 +31,7 @@ export const langDisplay : IObjectKeys  = {
         menu_main_personnel : "บุคลากร สวพ.",
         menu_main_information : "ระบบสารสนเทศของเรา",
         menu_main_doc_download : "ดาวน์โหลดเอกสาร",
+        menu_main_contact_ : "ติดต่อเรา ",
         menu_main_contact : "ติดต่อเรา ",
         menu_main_change_lang : "เปลี่ยนภาษา", 
         breadcrumb_namefull : "บริหารงานทั่วไป",
