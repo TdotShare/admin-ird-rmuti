@@ -33,6 +33,8 @@ export const langDisplay : IObjectKeys  = {
         menu_main_doc_download : "ดาวน์โหลดเอกสาร",
         menu_main_xxx : "ติดต่อเรา ",
         menu_main_change_lang : "เปลี่ยนภาษา", 
+        breadcrumb_namefull__ : "บริหารงานทั่วไป",
+        breadcrumb_namefull_ : "บริหารงานทั่วไป",
         breadcrumb_namefull : "บริหารงานทั่วไป",
         breadcrumb_organization_name : "สวพ.",
         breadcrumb_rmuti_name : "มทร.อีสาน", 
