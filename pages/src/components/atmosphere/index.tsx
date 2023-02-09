@@ -13,6 +13,10 @@ const Atmosphere : NextPage <AppProps> = ({ lang = "th" }) => {
         lang = "th"
     }
 
+    if(true){
+
+    }
+
     return (
         <section className="whats-included">
             <div className="whats-included__shape">
