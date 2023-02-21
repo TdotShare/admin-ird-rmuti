@@ -1,13 +1,12 @@
 import type { NextPage } from 'next'
 import { langDisplay } from '../../../../config/lang';
-import { titleConfig } from '../../../../config/title'
 
 
 type AppProps = {
     lang : string
 };
 
-const Atmosphere : NextPage <AppProps> = ({ lang = "th" }) => {
+const Atmosphere : NextPage <AppProps> = ({ lang ="th"}) => {
 
     if (!["th", "en"].includes(lang)) {
         lang = "th"
